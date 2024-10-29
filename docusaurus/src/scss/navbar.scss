@@ -186,12 +186,7 @@ $selector-color-mode-toggle-wrapper: 'div[class*="ColorModeToggle"]';
       --custom-navbar-icon-button-hover-background: var(--strapi-neutral-0);
 
       color: var(--strapi-neutral-400);
-      border: var(--strapi-input-border);
-      border-radius: 6px;
       font-family: var(--ifm-font-family-base);
-      height: 40px;
-      padding: 0 var(--strapi-spacing-3);
-      background-color: var(--custom-navbar-icon-button-hover-background);
 
       svg path {
         stroke-width: 2px;

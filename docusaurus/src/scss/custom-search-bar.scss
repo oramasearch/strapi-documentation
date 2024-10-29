@@ -1,9 +1,6 @@
 .my-custom-search-bar {
   display: flex;
   justify-content: space-evenly;
-  border: var(--strapi-input-border);
-  border-radius: 6px;
-  background-color: white;
   position: relative;
 
   .DocSearch.DocSearch-Button:hover {
