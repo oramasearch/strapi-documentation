@@ -1,71 +1,71 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github")
+const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 
-/** @type {import('@docusaurus/types').Config} */
+/** @type {import("@docusaurus/types").Config} */
 const config = {
-  title: 'Strapi 5 Documentation',
-  tagline: 'Design APIs fast, manage content easily.',
-  url: 'https://docs.strapi.io/',
-  baseUrl: '/',
-  onBrokenLinks: 'throw', // replace with 'throw' to stop building if broken links
-  onBrokenMarkdownLinks: 'throw',
-  favicon: 'https://strapi.io/assets/favicon-32x32.png',
+  title: "Strapi 5 Documentation",
+  tagline: "Design APIs fast, manage content easily.",
+  url: "https://docs.strapi.io/",
+  baseUrl: "/",
+  onBrokenLinks: "throw", // replace with 'throw' to stop building if broken links
+  onBrokenMarkdownLinks: "throw",
+  favicon: "https://strapi.io/assets/favicon-32x32.png",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   markdown: {
     mermaid: true,
   },
 
-  themes: ['@docusaurus/theme-live-codeblock', '@docusaurus/theme-mermaid'],
+  themes: ["@docusaurus/theme-live-codeblock", "@docusaurus/theme-mermaid"],
 
   scripts: [
     {
-      src: '/js/hotjar.js',
-      type: 'module',
+      src: "/js/hotjar.js",
+      type: "module",
       async: true,
     },
     {
-      src: '/js/particle.js',
-      type: 'module',
+      src: "/js/particle.js",
+      type: "module",
       async: true,
     },
     {
-      src: '/js/firework.js',
-      type: 'module',
+      src: "/js/firework.js",
+      type: "module",
       async: true,
     },
     {
-      src: '/js/ball.js',
-      type: 'module',
+      src: "/js/ball.js",
+      type: "module",
       async: true,
     },
     {
-      src: '/js/bar.js',
-      type: 'module',
+      src: "/js/bar.js",
+      type: "module",
       async: true,
     },
     {
-      src: '/js/game.js',
-      type: 'module',
+      src: "/js/game.js",
+      type: "module",
       async: true,
     },
     {
-      src: '/js/particleProfiles.js',
-      type: 'module',
+      src: "/js/particleProfiles.js",
+      type: "module",
       async: true,
     },
     {
-      src: '/js/ext-signals.js',
+      src: "/js/ext-signals.js",
       async: true,
     },
     {
@@ -73,44 +73,44 @@ const config = {
        * Kapa AI widget script and parameters
        * See https://docs.kapa.ai/installation-widget#optional-configuration-parameters-
        */
-      src: 'https://widget.kapa.ai/kapa-widget.bundle.js',
-      'data-website-id': 'f1838a12-ad58-4224-9fab-2f0704eeeb52',
-      'data-project-name': 'Strapi',
-      'data-project-logo': 'https://strapi.io/assets/favicon-32x32.png',
-      'data-button-hide': 'true',
-      'data-modal-disclaimer': 'Disclaimer: Answers are AI-generated and might be inaccurate. Please ensure you double-check the information provided by visiting source pages.',
-      'data-project-color': '#4945FF',
-      'data-button-bg-color': '#32324D',
+      src: "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "data-website-id": "f1838a12-ad58-4224-9fab-2f0704eeeb52",
+      "data-project-name": "Strapi",
+      "data-project-logo": "https://strapi.io/assets/favicon-32x32.png",
+      "data-button-hide": "true",
+      "data-modal-disclaimer": "Disclaimer: Answers are AI-generated and might be inaccurate. Please ensure you double-check the information provided by visiting source pages.",
+      "data-project-color": "#4945FF",
+      "data-button-bg-color": "#32324D",
       // 'data-modal-open-on-command-k': 'true',
-      'data-modal-override-open-class': "kapa-widget-button",
-      'data-modal-title-ask-ai': 'Ask your question',
+      "data-modal-override-open-class": "kapa-widget-button",
+      "data-modal-title-ask-ai": "Ask your question",
       async: true,
     },
   ],
   presets: [
     [
-      '@docusaurus/preset-classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
+      "@docusaurus/preset-classic",
+      /** @type {import("@docusaurus/preset-classic").Options} */
       {
         docs: {
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/strapi/documentation/edit/main/docusaurus',
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/strapi/documentation/edit/main/docusaurus",
           admonitions: {
-            tag: ':::',
+            tag: ":::",
             keywords: [
               // Admonitions defaults
-              'note',
-              'tip',
-              'info',
-              'caution',
-              'danger',
+              "note",
+              "tip",
+              "info",
+              "caution",
+              "danger",
 
               // Admonitions custom
-              'callout',
-              'prerequisites',
-              'strapi',
-              'warning',
+              "callout",
+              "prerequisites",
+              "strapi",
+              "warning",
             ],
           },
           /**
@@ -124,27 +124,27 @@ const config = {
         // we're using docs-only mode for now — see https://docusaurus.io/docs/docs-introduction
         blog: false,
         theme: {
-          customCss: require.resolve('./src/scss/__index.scss'),
+          customCss: require.resolve("./src/scss/__index.scss"),
         },
         sitemap: {
-          changefreq: 'weekly',
+          changefreq: "weekly",
           priority: 0.5,
-          ignorePatterns: ['/tags/**'],
-          filename: 'sitemap.xml',
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
         },
       },
     ],
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  /** @type {import("@docusaurus/preset-classic").ThemeConfig} */
     ({
       announcementBar: {
-        id: 'support_us',
+        id: "support_us",
         content:
           "You are viewing the Strapi 5 docs 🥳 Don't panic! Strapi v4 is still supported until March 2026. Strapi v4 docs are now hosted at <a target='_blank' rel='noopener noreferrer' href='https://docs-v4.strapi.io'>docs-v4.strapi.io</a>.",
-        backgroundColor: '#F3E5FA',
-        textColor: '#091E42',
+        backgroundColor: "#F3E5FA",
+        textColor: "#091E42",
         isCloseable: true,
       },
       docs: {
@@ -154,105 +154,105 @@ const config = {
         },
       },
       algolia: {
-         appId: '392RJ63O14',
-         apiKey: 'ed62374a794e8da5accb298e13618614',
-         indexName: 'strapiDocsNextstrapiDocsNext',
+        appId: "392RJ63O14",
+        apiKey: "ed62374a794e8da5accb298e13618614",
+        indexName: "strapiDocsNextstrapiDocsNext",
       },
       navbar: {
         hideOnScroll: false,
         logo: {
-          alt: 'Strapi Documentation Logo',
-          src: 'img/logo-v5.png',
-          srcDark: 'img/logo-v5-dark.png',
+          alt: "Strapi Documentation Logo",
+          src: "img/logo-v5.png",
+          srcDark: "img/logo-v5-dark.png",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'dev-docs/quick-start',
-            position: 'left',
-            label: 'Quick Start Guide',
+            type: "doc",
+            docId: "dev-docs/quick-start",
+            position: "left",
+            label: "Quick Start Guide",
           },
           {
-            type: 'doc',
-            docId: 'user-docs/intro',
-            position: 'left',
-            label: 'User Guide',
+            type: "doc",
+            docId: "user-docs/intro",
+            position: "left",
+            label: "User Guide",
           },
           {
-            type: 'doc',
-            docId: 'dev-docs/intro',
-            position: 'left',
-            label: 'Developer Docs',
+            type: "doc",
+            docId: "dev-docs/intro",
+            position: "left",
+            label: "Developer Docs",
           },
           {
-            type: 'doc',
-            docId: 'cloud/getting-started/intro',
-            position: 'left',
-            label: 'Cloud Documentation',
+            type: "doc",
+            docId: "cloud/getting-started/intro",
+            position: "left",
+            label: "Cloud Documentation",
           },
           {
-            type: 'doc',
-            docId: 'release-notes',
-            position: 'left',
-            label: 'Release Notes',
+            type: "doc",
+            docId: "release-notes",
+            position: "left",
+            label: "Release Notes",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Additional resources',
+            title: "Additional resources",
             items: [
               {
-                label: 'v4 Docs',
-                href: 'https://docs-v4.strapi.io'
+                label: "v4 Docs",
+                href: "https://docs-v4.strapi.io"
               },
               {
-                label: 'Contributor Docs',
-                href: 'https://contributor.strapi.io'
+                label: "Contributor Docs",
+                href: "https://contributor.strapi.io"
               },
               {
-                label: 'Strapi Design System',
-                href: 'https://design-system.strapi.io/'
+                label: "Strapi Design System",
+                href: "https://design-system.strapi.io/"
               },
               {
-                label: 'v3 Docs (unsupported)',
-                href: 'https://docs-v3.strapi.io'
+                label: "v3 Docs (unsupported)",
+                href: "https://docs-v3.strapi.io"
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Discord',
-                href: 'https://discord.strapi.io/',
+                label: "Discord",
+                href: "https://discord.strapi.io/",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/strapijs',
+                label: "Twitter",
+                href: "https://twitter.com/strapijs",
               },
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/strapi',
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com/questions/tagged/strapi",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: 'https://strapi.io/blog',
+                label: "Blog",
+                to: "https://strapi.io/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/strapi/documentation',
+                label: "GitHub",
+                href: "https://github.com/strapi/documentation",
               },
               {
-                label: 'Strapi.io',
-                href: 'https://strapi.io',
+                label: "Strapi.io",
+                href: "https://strapi.io",
               },
             ],
           },
@@ -269,13 +269,24 @@ const config = {
 
   plugins: [
     [
-      '@docusaurus/plugin-google-tag-manager',
+      "@docusaurus/plugin-google-tag-manager",
       {
-        containerId: 'GTM-WT49VGT',
+        containerId: "GTM-WT49VGT",
       },
     ],
-    'docusaurus-plugin-sass',
-    'docusaurus-plugin-image-zoom',
+    "docusaurus-plugin-sass",
+    "docusaurus-plugin-image-zoom",
+    [
+      '@orama/plugin-docusaurus', {
+      cloud: {
+        indexId: "dtvsq4mcjze7ml6cdxg7fvbv",
+        oramaCloudAPIKey: "KG3rl8kFE4yAtli4tlB3xNG48DVYRKuF",
+        deploy: process.env.NODE_ENV === 'development' ? false : 'snapshot-only'
+      },
+      searchbox: {},
+      searchButton: {}
+    },
+    ]
     /**
      * Seems like we have an issue where a medium-zoom--hidden class is applied on the second, top-most (z-index wise) image,
      * actually hiding the image when zoomed in. Found no related issue in the plugin's repo, might have to dig whether it's
@@ -300,6 +311,6 @@ const config = {
     //   },
     // ],
   ],
-};
+}
 
-module.exports = config;
+module.exports = config
